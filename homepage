@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha Varsha - Research Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Varsha Varsha</h1>
+        <p>Ph.D. Candidate in Chemical Engineering & Mathematics</p>
+        <p>Email: varsha@example.com</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Ph.D. candidate with a unique focus that bridges chemical engineering and mathematics. My research interests include the application of modular forms, Ricci flow, and number theory in optimization and complex systems.</p>
+        <p>Recently, I had the opportunity to present my work at the AIChE annual meeting, where I engaged in discussions with distinguished academics, such as Professor Ali Elkamel.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research Projects</h2>
+        <h3>1. Modular Forms in Combinatorial Optimization</h3>
+        <p>This project explores how modular forms can be applied to solve complex combinatorial problems, including the Asymmetric Traveling Salesman Problem (ATSP). The approach involves deep number-theoretic concepts integrated into optimization strategies.</p>
+
+        <h3>2. Stochastic Optimization Using Ricci Flow</h3>
+        <p>In this work, I investigate the application of Ricci flow and inverse Ricci flow for optimizing non-convex functions. This cross-disciplinary research connects differential geometry with practical optimization techniques.</p>
+
+        <h3>3. The Superposition Principle and the Riemann Hypothesis</h3>
+        <p>This ambitious project introduces a new function, <em>G(s)</em>, leveraging wave superposition to study the distribution of zeros of the Riemann zeta function. The work aims to provide a fresh perspective on one of mathematics' greatest unsolved problems.</p>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>Varsha V. (2024). <em>Modular Forms in Combinatorial Optimization</em>. <a href="https://arxiv.org/pdf/2404.15546">arXiv preprint</a>.</li>
+            <li>Varsha V. (2024). <em>Stochastic Optimization Using Ricci Flow</em>. Under review in Journal of Global Optimization.</li>
+            <li>Varsha V. (2024). <em>The Superposition Principle and the Riemann Hypothesis: A New Perspective</em>. Preprint under review.</li>
+        </ul>
+    </section>
+
+    <section id="presentations">
+        <h2>Presentations and Conferences</h2>
+        <p><strong>AIChE Annual Meeting (2024)</strong>: Presented a poster that highlighted my research on modular forms and Ricci flow, sparking discussions with notable academics such as Professor Ali Elkamel.</p>
+        <p>Other talks and workshops: Details to be updated as new presentations are scheduled.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to discuss my work or explore collaboration opportunities, please reach out at <a href="mailto:varsha@example.com">varsha@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Varsha Varsha. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varsha Varsha - Research Page</title>
+    <title>Varsha Gupta - Research Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,59 +43,108 @@
 </head>
 <body>
     <header>
-        <h1>Varsha Varsha</h1>
-        <p>Ph.D. Candidate in Chemical Engineering & Mathematics</p>
-        <p>Email: varsha@example.com</p>
+        <h1>Varsha Gupta</h1>
+        <p>Looking for Academic Position</p>
+        <p>Email: <a href="mailto:varsha.gupta589@gmail.com">varsha.gupta589@gmail.com</a></p>
     </header>
 
     <nav>
         <a href="#about">About Me</a>
+        <a href="#education">Education</a>
         <a href="#research">Research Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#presentations">Presentations</a>
-        <a href="#contact">Contact</a>
+        <a href="#media">Media Coverage</a>
+        <a href="#awards">Awards</a>
+        <a href="#industrial-experience">Industrial Experience</a>
     </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a Ph.D. candidate with a unique focus that bridges chemical engineering and mathematics. My research interests include the application of modular forms, Ricci flow, and number theory in optimization and complex systems.</p>
-        <p>Recently, I had the opportunity to present my work at the AIChE annual meeting, where I engaged in discussions with distinguished academics, such as Professor Ali Elkamel.</p>
+        <p>
+            I am a Ph.D. candidate with an interdisciplinary focus on sustainable energy systems, integrating data analysis,
+            mathematical modeling, and artificial intelligence. My research spans agrivoltaic systems, optimization, and predictive
+            modeling, providing innovative solutions to pressing challenges in renewable energy and agriculture.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Ph.D. in Energy Systems Engineering (Agrivoltaics)</strong><br>
+                Purdue University, 2020–2024<br>
+                Focus: Data Analysis, Mathematical Modeling & Optimization, Programming in Python and Julia, Artificial Intelligence, Agricultural & Biological Engineering.
+            </li>
+            <li>
+                <strong>Master of Science in Kinetics & Catalysis</strong><br>
+                Davidson School of Chemical Engineering, Purdue University, 2018–2019.
+            </li>
+            <li>
+                <strong>Bachelor of Engineering in Polymer Science & Chemical Engineering</strong><br>
+                Delhi Technological University (Formerly Delhi College of Engineering), 2009–2013.<br>
+                First Class Distinction.
+            </li>
+        </ul>
     </section>
 
     <section id="research">
         <h2>Research Projects</h2>
-        <h3>1. Modular Forms in Combinatorial Optimization</h3>
-        <p>This project explores how modular forms can be applied to solve complex combinatorial problems, including the Asymmetric Traveling Salesman Problem (ATSP). The approach involves deep number-theoretic concepts integrated into optimization strategies.</p>
+        <h3>1. Independent Research</h3>
+        <h4>The Superposition Principle and the Riemann Hypothesis</h4>
+        <p>
+            Introduces <em>G(s)</em>, leveraging wave interference to connect primes and non-trivial zeros of the zeta function. 
+            Explores fractal-like structures for insights into proving the Riemann Hypothesis.
+        </p>
+        <p>
+            <strong>Publication:</strong> Under review in <em>Ramanujan Journal</em>. <a href="https://zenodo.org/records/14165028" target="_blank">Zenodo</a>.
+        </p>
 
-        <h3>2. Stochastic Optimization Using Ricci Flow</h3>
-        <p>In this work, I investigate the application of Ricci flow and inverse Ricci flow for optimizing non-convex functions. This cross-disciplinary research connects differential geometry with practical optimization techniques.</p>
+        <h4>Modular Forms in Combinatorial Optimization</h4>
+        <p>
+            Develops modular forms-based algorithms for the Asymmetric Traveling Salesman Problem (ATSP), bridging number theory and combinatorial optimization.
+        </p>
+        <p>
+            <strong>Publication:</strong> <a href="https://arxiv.org/abs/2404.15546" target="_blank">ArXiv</a>.
+        </p>
 
-        <h3>3. The Superposition Principle and the Riemann Hypothesis</h3>
-        <p>This ambitious project introduces a new function, <em>G(s)</em>, leveraging wave superposition to study the distribution of zeros of the Riemann zeta function. The work aims to provide a fresh perspective on one of mathematics' greatest unsolved problems.</p>
+        <h3>2. Ph.D. Research</h3>
+        <h4>Topological Data Analysis, AI-Driven Predictive Modeling, and Optimization of Agrivoltaic Systems</h4>
+        <p>
+            Highlights include:
+            <ul>
+                <li>Mathematical modeling of plant dynamics under spatiotemporal shading.</li>
+                <li>Hybrid AI models for predicting crop yield based on geometric shadow patterns.</li>
+                <li>Economic optimization using iso-profit curves to improve agrivoltaic profitability.</li>
+            </ul>
+        </p>
     </section>
 
-    <section id="publications">
-        <h2>Publications</h2>
+    <section id="media">
+        <h2>Media Coverage</h2>
         <ul>
-            <li>Varsha V. (2024). <em>Modular Forms in Combinatorial Optimization</em>. <a href="https://arxiv.org/pdf/2404.15546">arXiv preprint</a>.</li>
-            <li>Varsha V. (2024). <em>Stochastic Optimization Using Ricci Flow</em>. Under review in Journal of Global Optimization.</li>
-            <li>Varsha V. (2024). <em>The Superposition Principle and the Riemann Hypothesis: A New Perspective</em>. Preprint under review.</li>
+            <li><a href="https://wisconsinwatch.org/2022/09/research-seeks-ways-to-grow-solar-and-crops-together-in-the-skeptical-corn-belt/" target="_blank">Wisconsin Watch</a></li>
+            <li><a href="https://www.indystar.com/story/news/environment/2022/09/13/purdue-leading-research-to-grow-solar-and-crops-together-in-corn-belt/66843196007/" target="_blank">Indianapolis Star</a></li>
         </ul>
     </section>
 
-    <section id="presentations">
-        <h2>Presentations and Conferences</h2>
-        <p><strong>AIChE Annual Meeting (2024)</strong>: Presented a poster that highlighted my research on modular forms and Ricci flow, sparking discussions with notable academics such as Professor Ali Elkamel.</p>
-        <p>Other talks and workshops: Details to be updated as new presentations are scheduled.</p>
+    <section id="awards">
+        <h2>Awards and Recognition</h2>
+        <ul>
+            <li><strong>Distinguished Speaker:</strong> Purdue Lecture Hall Series (2024).</li>
+            <li><strong>Seminar Speaker:</strong> University of California, Merced (2024).</li>
+            <li><strong>National Recognition:</strong> Ranked first in "Alchemist" (2012).</li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you would like to discuss my work or explore collaboration opportunities, please reach out at <a href="mailto:varsha@example.com">varsha@example.com</a>.</p>
+    <section id="industrial-experience">
+        <h2>Industrial Experience</h2>
+        <ul>
+            <li><strong>Senior Team Member, Dr. Reddy’s Laboratory:</strong> Optimized yield of Zafirlukast by 33%.</li>
+            <li><strong>Technical Executive, Symbiotec Pharma Lab:</strong> Optimized production plans for profitability.</li>
+        </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Varsha Varsha. All Rights Reserved.</p>
+        <p>&copy; 2024 Varsha Gupta. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

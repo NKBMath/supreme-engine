@@ -117,54 +117,161 @@
         <a href="https://engineering.purdue.edu/COOPS/people">Session Details</a>.
     </p>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D. Research</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h1 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            font-family: monospace;
+            border-radius: 4px;
+        }
+
+        .highlight {
+            background-color: #cfe2f3;
+            padding: 10px;
+            border-left: 4px solid #003366;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #666;
+        }
+    </style>
 </section>
- <h3>2. Ph.D. Research</h3>
-    <h4>Topological Data Analysis, AI-Driven Predictive Modeling, Mathematical Modeling, and Optimization of Agrivoltaic Systems</h4>
-    <p>
-        My Ph.D. research focuses on integrating advanced mathematical modeling, AI-driven predictive analytics, 
-        and topological data analysis to optimize agrivoltaic systems. By combining theoretical insights with practical applications, 
-        this work offers transformative solutions for sustainable farming and renewable energy integration.
-    </p>
+    <div class="container">
+        <h1>Ph.D. Research</h1>
 
-    <h5>Thermal Analysis of Agrivoltaic Systems</h5>
-    <p>
-        This study models the spatiotemporal energy distribution in agrivoltaic fields, focusing on the thermal gradients induced 
-        by panel shading. Insights into the geometric distribution of energy flux reveal patterns critical to optimizing plant growth 
-        and energy output. Thermal anomalies driven by shadow effects form a basis for system-wide temperature modeling.
-    </p>
+        <h2>1. Mathematical Modeling of Spatiotemporal Shadow Distribution (SSD)</h2>
+        <p>
+            Developed a precise mathematical framework to model shading patterns dynamically over an agrivoltaic domain <code>D ⊂ ℝ²</code> across time <code>t ∈ [0, T]</code>. Introduced the concept of Spatiotemporal Shadow Distribution (SSD), mapped onto a toroidal surface <code>T² = S¹ × S¹</code>, capturing spatial and temporal periodicity due to panel configurations and diurnal cycles.
+        </p>
+        <div class="highlight">
+            <strong>Key SSD Formulation:</strong>
+            <pre>
+Φ(x, t) = {
+    1, if x is shaded at time t,
+    0, otherwise.
+}
+            </pre>
+        </div>
 
-    <h5>Bijection Between Tracking Algorithms and Shadow Distribution </h5>
-    <p>
-        This chapter mathematically proves a bijection between tracking algorithms and spatiotemporal shadow distributions, 
-        connecting these dynamics to toroidal symmetry. The uniqueness of shadow profiles, as derived, enables precise optimization 
-        of tracking systems for agrivoltaic applications.
-    </p>
+        <h2>2. Stochastic Optimization on the Torus</h2>
+        <p>
+            Incorporated stochastic models to address environmental uncertainties (e.g., cloud cover) by defining probability density functions <code>𝒫(θ(t), t)</code> over <code>T²</code>. Applied calculus of variations on <code>T²</code> to determine geodesic paths that simultaneously optimize agricultural yield <code>Yₜₒₜₐₗ</code> and energy output <code>Eₑₙₑᵣgᵧ</code>.
+        </p>
+        <div class="highlight">
+            <strong>Combined Optimization Objective:</strong>
+            <pre>
+max{θ(t) ∈ S¹} E = αEₑₙₑᵣgᵧ + βYₜₒₜₐₗ
+            </pre>
+        </div>
 
-    <h5>Mathematical Framework for Plant Growth Dynamics </h5>
-    <p>
-        By integrating crop models with spatiotemporal radiation patterns, this work introduces a novel framework for plant growth 
-        dynamics. The findings demonstrate the non-monotonic relationship between crop yield and total radiation, emphasizing 
-        nonlinear interactions shaped by shading and photosynthesis.
-    </p>
+        <h2>3. Non-Monotonicity in Yield Functionality</h2>
+        <p>
+            Proved that crop yield exhibits a non-monotonic relationship with total radiation <code>Rₜₒₜₐₗ</code>. Formulated the yield functional <code>Y[x; Φ]</code> and validated non-monotonicity using Jensen's inequality:
+        </p>
+        <div class="highlight">
+            <pre>
+Y[x; Φ] = ∫₀ᵀ f((1 - Φ(x, t)) ⋅ Rₛₒₗₐᵣ(t)) dt,
+f(R) = 1 - e⁻⁽ᵅ⁾R
+            </pre>
+        </div>
 
-    <h5>Predicting Corn Yield Using Hybrid AI Models </h5>
-    <p>
-        A hybrid LSTM-Transformer model was developed to predict corn yield by integrating spatiotemporal shadow geometry with 
-        machine learning techniques. The model captures both short- and long-term radiation impacts, enhancing predictive accuracy 
-        and informing agrivoltaic design.
-    </p>
+        <h2>4. Differential Geometry and Shadow Continuity</h2>
+        <p>
+            Ensured smooth transitions in shadow profiles <code>P(t)</code> through differential geometry techniques:
+        </p>
+        <div class="highlight">
+            <pre>
+P(t) = ⋃q=1ⁿ Uq(t),
+Uq(t) = {x ∈ D | xqi ≤ x ≤ xqf}
+            </pre>
+        </div>
+        <p>
+            Represented shadow dynamics as geodesic paths on the torus, reducing the complexity of combinatorial optimization in system design.
+        </p>
 
-    <h5>Economic Optimization of Corn Agrivoltaic Farming </h5>
-    <p>
-        Using iso-profit curves, this research identifies optimal economic configurations for agrivoltaic systems. Spatial layout 
-        optimization combines geometric shadow analysis with profitability metrics to guide decisions on panel spacing, height, 
-        and tracking algorithms.
-    </p>
+        <h2>5. Integration of Thermal Dynamics</h2>
+        <p>
+            Developed coupled energy balance models to integrate the thermal effects of shading, highlighting its dual role in mitigating plant heat stress and enhancing PV panel efficiency. These models provide a deeper understanding of agrivoltaic system interactions.
+        </p>
 
-    <p>
-        <strong>Thesis Title:</strong> Topological Data Analysis, AI-Driven Predictive Modeling, Mathematical Modeling, 
-        and Optimization of Agrivoltaic Systems.
-    </p>
+        <h2>Research Significance</h2>
+        <p>
+            This research introduces advanced mathematical tools to address the challenges of agrivoltaic system design, enabling:
+        </p>
+        <ul>
+            <li>Precise optimization of spatiotemporal solar resource distribution across higher-dimensional spaces.</li>
+            <li>Quantitative analysis of trade-offs between crop yield and renewable energy output under varying environmental conditions.</li>
+            <li>Integration of plant dynamics, radiation physics, and energy balance models into scalable agrivoltaic frameworks.</li>
+        </ul>
+
+        <h2>Applications and Future Directions</h2>
+        <p>
+            This work provides a foundation for designing resilient agrivoltaic systems adaptable to diverse climates and land-use scenarios. Future directions include:
+        </p>
+        <ul>
+            <li>Employing machine learning models for real-time optimization of SSDs.</li>
+            <li>Expanding the framework to multi-crop systems for broader agricultural applications.</li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2024 Your Name | Ph.D. Research
+        </div>
+    </div>
+</body>
+
+
 </section> 
 <section id="media">
     <h2>Media Coverage</h2>

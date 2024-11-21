@@ -10,34 +10,58 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #DC143C;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             text-align: center;
-            background-color: #DC143C;
+            background-color: #8b0000;
             color: #fff;
             padding: 20px;
         }
         nav {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #8b0000;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
-            background-color: #DC143C;
-            padding: 15px;
+            background-color: #fff;
+            padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #8b0000;
         }
         footer {
             text-align: center;
             margin-top: 20px;
             color: #777;
+            font-size: 0.9em;
+        }
+        a {
+            color: #0066cc;
+        }
+        a:hover {
+            color: #003399;
+        }
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
@@ -49,190 +73,31 @@
     </header>
 
     <nav>
-        <a href="#research">Research Projects</a>
-        <a href="#media">Media Coverage</a>
-        <a href="#awards">Awards</a>
-        <a href="#industrial-experience">Industrial Experience</a>
+        <a href="#research" aria-label="Research Projects Section">Research Projects</a>
+        <a href="#media" aria-label="Media Coverage Section">Media Coverage</a>
+        <a href="#awards" aria-label="Awards Section">Awards</a>
+        <a href="#industrial-experience" aria-label="Industrial Experience Section">Industrial Experience</a>
     </nav>
 
     <section id="research">
-    <h2>Research Projects</h2>
-    
-    <h3>1. Independent Research</h3>
-    <h4>The Superposition Principle and the Riemann Hypothesis: A New Perspective on a Classic Problem</h4>
-    <p>
-        This work explores a novel function, <em>G(s)</em>, defined through prime numbers, which directly connects the distribution of primes and the non-trivial zeros of the Riemann zeta function.
-        Through mathematical theorems and properties, the paper introduces a wave interference perspective to analyze the symmetry and cancellations in the Riemann zeta function.
-        The research provides insights into fractal-like structures of critical zeros and their implications for proving the Riemann Hypothesis.
-    </p>
-    <p>
-        <strong>Publication:</strong> Under review in the <em>Ramanujan Journal</em>. Available on 
-        <a href="https://zenodo.org/records/14165028" target="_blank">Zenodo</a>.
-    </p>
-       <h4>Unified Framework for Total Variation Regularized Optimization in Fluid Dynamics and Related Physical Systems</h4>
-    <p>
-        This project presents an optimization framework for minimizing the energy functional governing physical systems such as fluid dynamics, particle transport, and phase transitions. 
-        The method introduces a Total Variation (TV) regularization term to analyze convergence in convection-dominated problems, and its application is demonstrated across systems like 
-        the Navier-Stokes, Boltzmann, and Maxwell equations.
-    </p>
-    <p>
-        <strong>Publication:</strong> Under review in the Journal of Non-Linear Mathematical Physics. Preprint available on 
-        <a href="https://arxiv.org/abs/2404.15540">ArXiv</a>.
-    </p>
-    <p>
-        <strong>Presentation:</strong> Presented at AIChE 2024 in the session <em>213h - Computational Analyses of Mixing Processes III</em>. 
-        <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/700396">Session Details</a>.
-    </p>
+        <h2>Research Projects</h2>
+        <!-- Your content for research projects here -->
+    </section>
 
-    <h4>Modular Forms in Combinatorial Optimization</h4>
-    <p>
-        This paper introduces a theoretical framework for applying modular forms to combinatorial optimization problems, with a focus on the Asymmetric Traveling Salesman Problem (ATSP). 
-        By translating the problem into the complex domain, the research uncovers a modular structure and leverages modular invariance to inform both unconstrained and constrained optimal solutions.
-        The findings lay a foundation for future algorithmic development at the intersection of number theory and combinatorial optimization.
-    </p>
-    <p>
-        <strong>Publication:</strong> Preprint available on <a href="https://arxiv.org/abs/2404.15546">ArXiv</a>.
-    </p>
-    <p>
-        <strong>Presentation:</strong> Presented at AIChE 2024 in <em>Poster Session 371 - 10A: Interactive Session: Systems and Process Design</em>.
-        <a href="https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/692060">Session Details</a>.
-    </p>
+    <section id="media">
+        <h2>Media Coverage</h2>
+        <!-- Your content for media coverage here -->
+    </section>
 
-    <h4>Stochastic Optimization Using Ricci Flow</h4>
-    <p>
-        This paper proposes a novel theoretical framework for optimizing bounded functions using Fourier series approximations and Ricci flow. The approach combines sampling methods along circles defined 
-        by Riemannian metrics with "inverse Ricci flow" to identify potential global optima through the accentuation of high curvature regions. The technique is applicable to a variety of optimization problems, 
-        offering insights into high-dimensional and non-convex landscapes.
-    </p>
-    <p>
-        <strong>Publication:</strong> Preprint available on <a href="https://arxiv.org/abs/2411.04292">ArXiv</a>.
-    </p>
-    <p>
-        <strong>Presentation:</strong> Presented at the inaugural meeting of the Purdue Center for Operations and Optimization in Process Systems (COOPS), 
-        <em>Poster Session: September 26, 2024</em>.
-        <a href="https://engineering.purdue.edu/COOPS/people">Session Details</a>.
-    </p>
+    <section id="awards">
+        <h2>Awards and Recognition</h2>
+        <!-- Your content for awards here -->
+    </section>
 
-       <h3>Ph.D. Research</h3>
-
-        <h2>1. Mathematical Modeling of Spatiotemporal Shadow Distribution (SSD)</h2>
-        <p>
-            Developed a precise mathematical framework to model shading patterns dynamically over an agrivoltaic domain <code>D ⊂ ℝ²</code> across time <code>t ∈ [0, T]</code>. Introduced the concept of Spatiotemporal Shadow Distribution (SSD), mapped onto a toroidal surface <code>T² = S¹ × S¹</code>, capturing spatial and temporal periodicity due to panel configurations and diurnal cycles.
-        </p>
-        <div class="highlight">
-            <strong>Key SSD Formulation:</strong>
-            <pre>
-Φ(x, t) = {
-    1, if x is shaded at time t,
-    0, otherwise.
-}
-            </pre>
-        </div>
-
-        <h2>2. Stochastic Optimization on the Torus</h2>
-        <p>
-            Incorporated stochastic models to address environmental uncertainties (e.g., cloud cover) by defining probability density functions <code>𝒫(θ(t), t)</code> over <code>T²</code>. Applied calculus of variations on <code>T²</code> to determine geodesic paths that simultaneously optimize agricultural yield <code>Yₜₒₜₐₗ</code> and energy output <code>Eₑₙₑᵣgᵧ</code>.
-        </p>
-        <div class="highlight">
-            <strong>Combined Optimization Objective:</strong>
-            <pre>
-max{θ(t) ∈ S¹} E = αEₑₙₑᵣgᵧ + βYₜₒₜₐₗ
-            </pre>
-        </div>
-
-        <h2>3. Non-Monotonicity in Yield Functionality</h2>
-        <p>
-            Proved that crop yield exhibits a non-monotonic relationship with total radiation <code>Rₜₒₜₐₗ</code>. Formulated the yield functional <code>Y[x; Φ]</code> and validated non-monotonicity using Jensen's inequality:
-        </p>
-        <div class="highlight">
-            <pre>
-Y[x; Φ] = ∫₀ᵀ f((1 - Φ(x, t)) ⋅ Rₛₒₗₐᵣ(t)) dt,
-f(R) = 1 - e⁻⁽ᵅ⁾R
-            </pre>
-        </div>
-
-        <h2>4. Differential Geometry and Shadow Continuity</h2>
-        <p>
-            Ensured smooth transitions in shadow profiles <code>P(t)</code> through differential geometry techniques:
-        </p>
-        <div class="highlight">
-            <pre>
-P(t) = ⋃q=1ⁿ Uq(t),
-Uq(t) = {x ∈ D | xqi ≤ x ≤ xqf}
-            </pre>
-        </div>
-        <p>
-            Represented shadow dynamics as geodesic paths on the torus, reducing the complexity of combinatorial optimization in system design.
-        </p>
-
-        <h2>5. Integration of Thermal Dynamics</h2>
-        <p>
-            Developed coupled energy balance models to integrate the thermal effects of shading, highlighting its dual role in mitigating plant heat stress and enhancing PV panel efficiency. These models provide a deeper understanding of agrivoltaic system interactions.
-        </p>
-
-        <h2>Research Significance</h2>
-        <p>
-            This research introduces advanced mathematical tools to address the challenges of agrivoltaic system design, enabling:
-        </p>
-        <ul>
-            <li>Precise optimization of spatiotemporal solar resource distribution across higher-dimensional spaces.</li>
-            <li>Quantitative analysis of trade-offs between crop yield and renewable energy output under varying environmental conditions.</li>
-            <li>Integration of plant dynamics, radiation physics, and energy balance models into scalable agrivoltaic frameworks.</li>
-        </ul>
-
-
-</section> 
-<section id="media">
-    <h2>Media Coverage</h2>
-    <ul>
-        <li><a href="https://wisconsinwatch.org/2022/09/research-seeks-ways-to-grow-solar-and-crops-together-in-the-skeptical-corn-belt/" target="_blank">Wisconsin Watch: A Skeptical Corn Belt</a></li>
-        <li><a href="https://www.indystar.com/story/news/environment/2022/09/13/purdue-leading-research-to-grow-solar-and-crops-together-in-corn-belt/66843196007/" target="_blank">Indianapolis Star: Can Solar Panels and Row Crops Coexist?</a></li>
-        <li><a href="https://thelensnola.org/2022/09/09/research-seeks-ways-to-grow-solar-and-crops-together-in-the-skeptical-corn-belt/" target="_blank">The Lens: Research on Solar and Crops</a></li>
-        <li><a href="https://www.thegazette.com/news/research-seeks-ways-to-grow-solar-and-crops-together-in-the-skeptical-corn-belt/" target="_blank">The Gazette: Research on Solar and Crops</a></li>
-        <li><a href="https://www.purdue.edu/newsroom/2024/Q3/validated-simulations-optimize-solar-power-generation-with-row-crops/" target="_blank">Validated Simulations Optimize Solar Power Generation with Row Crops</a></li>
-        <li><a href="https://www.eurekalert.org/news-releases/1055011" target="_blank">EurekAlert: Purdue Research on Agrivoltaics</a></li>
-    </ul>
-</section>
-<section id="awards">
-    <h2>Awards and Recognition</h2>
-    <ul>
-        <li>
-            <strong>Distinguished Speaker:</strong> Purdue Lecture Hall Series (2024)<br>
-            Topic: "Art of Abstraction in Mathematical Sciences."
-        </li>
-        <li>
-            <strong>Seminar Speaker:</strong> University of California, Merced (2024)<br>
-            Topic: “Sustainable Co-Production of Food and Energy.”
-        </li>
-        <li>
-            <strong>National Recognition:</strong> Ranked first in "Alchemist," a national-level chemical engineering symposium (2012).
-        </li>
-        <li>
-            <strong>Competitive Ranking:</strong> Top 1.4% of students in the Common Entrance Test (CET) (2009).
-        </li>
-    </ul>
-</section>
-<section id="industrial-experience">
-    <h2>Industrial Experience</h2>
-    <ul>
-        <li>
-            <strong>Senior Team Member, Dr. Reddy’s Laboratory (India)</strong><br>
-            Mar 2016 – Jul 2018<br>
-            - Conducted root cause analysis and optimized processes to increase the yield of Zafirlukast by 33%.
-        </li>
-        <li>
-            <strong>Technical Executive Assistant to President, Symbiotec Pharma Lab</strong><br>
-            Jan 2016 – Mar 2016<br>
-            - Optimized production plans and resource allocation for enhanced operational profitability.
-        </li>
-        <li>
-            <strong>Process Design Trainee, SRF Limited</strong><br>
-            Jun 2013 – Jul 2015<br>
-            - Designed engineering packages focused on process optimization, equipment design, and systems layout for improved efficiency.
-        </li>
-    </ul>
-</section>
-
+    <section id="industrial-experience">
+        <h2>Industrial Experience</h2>
+        <!-- Your content for industrial experience here -->
+    </section>
 
     <footer>
         <p>&copy; 2024 Varsha Gupta. All Rights Reserved.</p>
